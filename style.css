@@ -28,6 +28,9 @@ a {
   cursor: pointer;
   color: #40196d;
 }
+#backButton {
+  display: none;
+}
 .navbar-brand {
   padding-right: 50px;
 }
@@ -379,7 +382,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #fbfbfb;
   padding: 73px 0 63px;
 }
 .partnerimgs {
@@ -391,15 +394,17 @@ a {
 .partnerimgs a {
   margin: 0 20px;
 }
-.freedom {
+freedom {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 60px 0;
 }
+.freedom h1 {
+  color: #40196d;
+}
 #customers {
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   border: 1px solid hsla(228, 7%, 87%, 0.5);
   border-radius: 5px;
@@ -431,6 +436,9 @@ td i {
   flex-direction: column;
   align-items: center;
   margin: 50px 200px;
+}
+.more h2 {
+  color: #40196d;
 }
 .flexcards {
   display: flex;
@@ -495,6 +503,9 @@ td i {
 .moneyapp {
   align-items: center;
   justify-content: space-between;
+}
+.moneyapp h1 {
+  color: #40196d;
 }
 .moneyapp button {
   background-color: #40196d;
@@ -645,6 +656,9 @@ td i {
   }
 
   .hamburger {
+    display: block;
+  }
+  .dropdown-content.show #backButton {
     display: block;
   }
   .flexdrop {
@@ -864,21 +878,24 @@ td i {
     font-size: 28px;
   }
   .partners {
-    padding: 80px 20px 60px;
+    padding: 40px 20px 65px;
     color: #40196d;
     height: auto;
   }
   .partnerimgs {
-    display: grid;
-    grid-template-columns: auto auto;
+    flex-wrap: wrap;
     text-align: center;
     gap: 20px;
-    max-width: 120px;
+
     margin: 0;
   }
   .partnerimgs a {
     margin: 0;
     padding: 0;
+    max-width: 100px;
+  }
+  #visa {
+    flex-basis: 100%;
   }
   .freedom {
     text-align: center;
@@ -890,10 +907,9 @@ td i {
     padding: 0;
   }
   #customers td {
-    padding: 10px;
-    padding-left: 0;
-    /* display: flex; */
+    padding: 20px 10px 20px 10px;
     text-align: left;
+    font-family: inherit;
   }
   td i {
     padding: 3px;

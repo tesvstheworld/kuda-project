@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
   var dropdownToggles = document.querySelectorAll('.dropdown-toggle')
 
