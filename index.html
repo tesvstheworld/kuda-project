@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kuda</title>
+    <title>Kuda project</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="/images/favicon.ico.png" type="image/icon type" />
     <script
@@ -16,6 +16,9 @@
       <div class="navbar-brand">
         <img src="/images/logo.png" alt="Kuda Logo" class="company-logo" />
       </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+      </button>
       <div class="navbar-menu">
         <div class="dropdown">
           <button class="dropbtn">
@@ -25,31 +28,55 @@
             <div class="flexdrop">
               <div class="dropdown-col">
                 <a href=""
-                  ><i class="fa-solid fa-house-chimney"></i> Discover
+                  ><i class="fa-solid fa-house-chimney" id="blue"></i> Discover
                   Personal</a
                 >
                 <a href=""
-                  ><i class="fa-solid fa-location-arrow"></i>Transfer & Spend</a
+                  ><i class="fa-solid fa-location-arrow" id="green"></i>Transfer
+                  & Spend</a
                 >
-                <a href=""><i class="fa-solid fa-piggy-bank"></i>Save</a>
                 <a href=""
-                  ><i class="fa-solid fa-chart-simple"></i>Investments</a
+                  ><i class="fa-solid fa-piggy-bank" id="yellow"></i>Save</a
                 >
-                <a href=""><i class="fa-solid fa-credit-card"></i>Kuda Card</a>
+                <a href=""
+                  ><i class="fa-solid fa-chart-simple" id="blue"></i
+                  >Investments</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-credit-card" id="green"></i>Kuda
+                  Card</a
+                >
               </div>
               <div class="dropdown-col" id="dropdown-col">
                 <span>Payments</span>
-                <a href="">Electricity</a>
-                <a href="">Airtime</a>
-                <a href="">Internet</a>
-                <a href="">Gift Cards </a>
-                <a href="">Cardless Payments</a>
-                <a href="">TV</a>
-                <a href="">Betting</a>
-                <a href="">Transport</a>
-                <span></span>
-                <a href="">Overdrafts</a>
-                <a href="">Salary Loan</a>
+                <a href=""
+                  ><i class="fa-regular fa-lightbulb" id="red"></i
+                  >Electricity</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-phone" id="green"></i>Airtime</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-wifi" id="l-blue"></i>Internet</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-bag-shopping" id="blue"></i>Gift Cards
+                </a>
+                <a href=""
+                  ><i class="fa-solid fa-globe" id="yellow"></i>Cardless
+                  Payments</a
+                >
+                <a href=""><i class="fa-solid fa-tv" id="l-blue"></i>TV</a>
+                <a href=""><i class="fa-solid fa-heart" id="red"></i>Betting</a>
+                <a href=""><i class="fa-solid fa-car"></i>Transport</a>
+                <span>Credit</span>
+                <a href=""
+                  ><i class="fa-solid fa-cloud" id="l-blue"></i>Overdrafts</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-money-bill" id="yellow"></i>Salary
+                  Loan</a
+                >
               </div>
             </div>
           </div>
@@ -61,25 +88,68 @@
           <div class="dropdown-content">
             <div class="flexdrop">
               <div class="dropdown-col">
-                <a href="">Discover Business</a>
-                <a href="">Business Registration</a>
-                <a href="">softPOS</a>
-                <a href="">Cashback </a>
-                <a href="">POS Machine</a>
-                <a href="">Invoicing</a>
-                <a href="">Salary Loan</a>
-                <a href="">Business API</a>
-                <a href="">Payroll with Bento</a>
-                <a href="">Sub Accounts</a>
-                <a href="">Virtual POS</a>
+                <a href=""
+                  ><i class="fa-solid fa-house" id="l-blue-black"></i> Discover
+                  Business</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-briefcase" id="green-black"></i>
+                  Business Registration</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-fax" id="green-black"></i>softPOS</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-money-bill" id="blue-black"></i
+                  >Cashback
+                </a>
+                <a href=""
+                  ><i class="fa-solid fa-cash-register" id="green-black"></i>POS
+                  Machine</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-file-invoice" id="l-blue"></i
+                  >Invoicing</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-building-columns" id="green-black"></i
+                  >Salary Loan</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-business-time" id="blue-black"></i
+                  >Business API</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-circle-nodes" id="deep-blue"></i
+                  >Payroll with Bento</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-users" id="yellow"></i>Sub Accounts</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-mobile" id="green-black"></i>Virtual
+                  POS</a
+                >
               </div>
               <div class="dropdown-col" id="dropdown-col">
                 <span>Payments</span>
-                <a href="">Send Money</a>
-                <a href="">TV</a>
-                <a href="">Airtime & Internet Data</a>
-                <a href="">Electricity</a>
-                <a href="">Bill Payments</a>
+                <a href=""
+                  ><i class="fa-solid fa-location-arrow" id="green"></i>Spend
+                  Money</a
+                >
+                <a href=""><i class="fa-solid fa-tv" id="l-blue"></i>TV</a>
+                <a href=""
+                  ><i class="fa-solid fa-wifi" id="green"></i>Airtime & Internet
+                  Data</a
+                >
+                <a href=""
+                  ><i class="fa-regular fa-lightbulb" id="red"></i
+                  >Electricity</a
+                >
+                <a href=""
+                  ><i class="fa-solid fa-money-bill-wave" id="l-blue"></i>Bill
+                  Payments</a
+                >
               </div>
             </div>
           </div>
@@ -332,52 +402,52 @@
             <td id="otherbanks">
               <i class="fa-solid fa-minus"></i>Up to ₦50 plus V.A.T.
             </td>
-            <td>
+            <td id="otherbank">
               <i class="fa-solid fa-check"></i> 25 free transfers every month
             </td>
           </tr>
           <tr class="tablerows">
             <td><b>Card Delivery</b></td>
             <td id="otherbanks"><i class="fa-solid fa-minus"></i>🤨</td>
-            <td><i class="fa-solid fa-check"></i> Yes</td>
+            <td id="otherbank"><i class="fa-solid fa-check"></i> Yes</td>
           </tr>
           <tr class="tablerows">
             <td><b>Card Maintenance Fee</b></td>
             <td id="otherbanks">
               <i class="fa-solid fa-minus"></i>Up to ₦50 per quarter
             </td>
-            <td><i class="fa-solid fa-check"></i> No</td>
+            <td id="otherbank"><i class="fa-solid fa-check"></i> No</td>
           </tr>
           <tr class="tablerows">
             <td><b>Alerts</b></td>
             <td id="otherbanks">
               <i class="fa-solid fa-minus"></i>Charge for SMS alerts
             </td>
-            <td>
+            <td id="otherbank">
               <i class="fa-solid fa-check"></i> Free instant notifications
             </td>
           </tr>
           <tr class="tablerows">
             <td><b>Annual Interest</b></td>
             <td id="otherbanks"><i class="fa-solid fa-minus"></i>4%</td>
-            <td><i class="fa-solid fa-check"></i> Up to 15%</td>
+            <td id="otherbank"><i class="fa-solid fa-check"></i> Up to 15%</td>
           </tr>
           <tr class="tablerows">
             <td><b>Bill Payment Fee</b></td>
             <td id="otherbanks">
               <i class="fa-solid fa-minus"></i>Up to ₦100 per bill
             </td>
-            <td><i class="fa-solid fa-check"></i> No</td>
+            <td v><i class="fa-solid fa-check"></i> No</td>
           </tr>
           <tr class="tablerows">
             <td><b>Instant Reversals</b></td>
             <td id="otherbanks"><i class="fa-solid fa-minus"></i>😒</td>
-            <td><i class="fa-solid fa-check"></i> Yes</td>
+            <td id="otherbank"><i class="fa-solid fa-check"></i> Yes</td>
           </tr>
           <tr class="tablerows">
             <td><b>Maintenance</b></td>
             <td id="otherbanks"><i class="fa-solid fa-minus"></i>Yes</td>
-            <td><i class="fa-solid fa-check"></i> No</td>
+            <td id="otherbank"><i class="fa-solid fa-check"></i> No</td>
           </tr>
         </table>
       </div>
